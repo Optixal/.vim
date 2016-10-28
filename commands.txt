@@ -1,0 +1,19 @@
+# Setup by linking .vimrc and initializing submodule
+./setup.sh
+
+# Installing a plugin as a submodule
+git submodule add http://github.com/[user]/[plugin] bundle/[plugin-name]
+git add .
+git commit -m "Installed [plugin] bundle as a submodule."
+
+# Updating bundled submodule plugins
+git submodule foreach git pull origin master
+# or update each plugin manually
+cd bundles/[plugin]
+git pull
+
+# Removing a plugin
+git submodule deinit -f bundle/[plugin-name]
+git rm -rf bundle/[plugin-name]
+git add .
+git commit -m "Removed [plugin] bundle"

@@ -1,0 +1,6 @@
+[submodule "bundle/Pretty-Vim-Python"]
+	path = bundle/Pretty-Vim-Python
+	url = https://github.com/pfdevilliers/Pretty-Vim-Python.git
+[submodule "bundle/dracula-theme"]
+	path = bundle/dracula-theme
+	url = https://github.com/dracula/vim
