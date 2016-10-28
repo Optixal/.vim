@@ -1,4 +1,4 @@
-# Setup by linking .vimrc and initializing submodule
+# Setup by linking .vimrc and initializing submodules
 ./setup.sh
 
 # Installing a plugin as a submodule
@@ -17,3 +17,7 @@ git submodule deinit -f bundle/[plugin-name]
 git rm -rf bundle/[plugin-name]
 git add .
 git commit -m "Removed [plugin] bundle"
+
+# Pathogen with Submodules Guides
+https://gist.github.com/romainl/9970697
+http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
