@@ -1,3 +1,4 @@
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 execute pathogen#helptags()
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab smartindent

@@ -1,5 +1,5 @@
 # Setup by linking .vimrc and initializing submodules
-./setup.sh
+./install.sh
 
 # Installing a plugin as a submodule
 git submodule add http://github.com/[user]/[plugin] bundle/[plugin-name]
