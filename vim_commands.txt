@@ -1,0 +1,16 @@
+# Insert Mode
+i
+
+# Append - Insert Mode
+Shift + a
+
+# Scrolling
+Shift + Up/Down
+
+# Splitting Window Vertically
+Ctrl + w
+v
+
+# Splitting Window Horizontally
+Ctrl + w
+Shift + s

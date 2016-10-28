@@ -4,3 +4,6 @@
 [submodule "bundle/dracula-theme"]
 	path = bundle/dracula-theme
 	url = https://github.com/dracula/vim
+[submodule "bundle/lexima"]
+	path = bundle/lexima
+	url = https://github.com/cohama/lexima.vim
