@@ -1,4 +1,4 @@
 #!/bin/bash
-ln -s vimrc ~/.vimrc
-#git submodule init
-#git submodule update
+ln -s -f vimrc ~/.vimrc
+git submodule init
+git submodule update
