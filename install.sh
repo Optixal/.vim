@@ -1,5 +1,5 @@
 #!/bin/bash
-rm vimrc
+rm -f vimrc
 git pull
 git checkout origin/master vimrc
 ln -s -f vimrc ~/.vimrc
