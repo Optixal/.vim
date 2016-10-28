@@ -14,3 +14,9 @@ v
 # Splitting Window Horizontally
 Ctrl + w
 Shift + s
+
+# Undo
+u
+
+# Redo
+Ctrl + r
