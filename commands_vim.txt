@@ -1,22 +1,16 @@
-# Insert Mode
-i
-
-# Append - Insert Mode
-Shift + a
-
-# Scrolling
-Shift + Up/Down
-
-# Splitting Window Vertically
-Ctrl + w
-v
-
-# Splitting Window Horizontally
-Ctrl + w
-Shift + s
-
-# Undo
-u
-
-# Redo
-Ctrl + r
+i                                       -       Insert Mode
+Shift + a                               -       Append - Insert Mode
+:wq                                     -       Write and Quit
+Shift + Up/Down                         -       Scrolling
+:e [file]                               -       Edit Another File
+u                                       -       Undo
+Ctrl + r                                -       Redo
+/[word]                                 -       Search
+:%s/old/new/g                           -       Replace All
+:[startline],[endline]s/old/new/g       -       Replace Between Lines
+:%s/^/[word]/g                          -       Append Word to Start of Every Line
+:%s/$/[word]/g                          -       Append Word to End of Every Line
+gg                                      -       Goto First Line
+G                                       -       Goto Last Line
+Ctrl + w and v                          -       Splitting Window Vertically
+Ctrl + w and Shift + s                  -       Splitting Window Horizontally
