@@ -1,5 +1,6 @@
 i                                       -       Insert Mode
-Shift + a                               -       Append - Insert Mode
+Shift + a                               -       Insert Mode - Append
+o                                       -       Insert Mode - New Line After
 :wq                                     -       Write and Quit
 Shift + Up/Down                         -       Scrolling
 :e [file]                               -       Edit Another File
@@ -14,3 +15,9 @@ gg                                      -       Goto First Line
 G                                       -       Goto Last Line
 Ctrl + w and v                          -       Splitting Window Vertically
 Ctrl + w and Shift + s                  -       Splitting Window Horizontally
+Shift + v                               -       Visual select entire line
+d                                       -       Delete/Cut
+dd                                      -       Delete Current Line
+d[number]d                              -       Delete Multiple Lines
+y                                       -       Yank/Copy
+p                                       -       Paste
