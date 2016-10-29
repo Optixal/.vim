@@ -7,6 +7,7 @@
 [submodule "bundle/lexima"]
 	path = bundle/lexima
 	url = https://github.com/cohama/lexima.vim
+	ignore = dirty
 [submodule "bundle/vim-pathogen"]
 	path = bundle/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen
