@@ -23,8 +23,9 @@ Shift + n                               -       Search - Previous
 Ctrl + w and v                          -       Splitting Window Vertically
 Ctrl + w and Shift + s                  -       Splitting Window Horizontally
 
-Shift + v                               -       Visual Select Entire Line
-Ctrl + v                                -       Visual Select Blocks
+v                                       -       Visual Select
+Shift + v                               -       Visual Select - Line
+Ctrl + v                                -       Visual Select - Block
 Shift + v and [number]>                 -       Tab a Line Multiple Times
 
 d                                       -       Delete/Cut
