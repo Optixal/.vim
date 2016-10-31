@@ -28,3 +28,8 @@ let g:syntastic_style_warning_symbol = '≈'
 
 " Powerline
 let g:airline_powerline_fonts = 1
+
+" Lexima
+call lexima#add_rule({'char': '//', 'input': '/* ','input_after': ' */', 'filetype': 'c'})
+call lexima#add_rule({'char': '/*', 'input': '/* ','input_after': ' */', 'filetype': 'c'})
+call lexima#add_rule({'char': '/main', 'input': '#include <stdio.h><CR><CR>int main(int argc, char *argv[]) {<CR>','input_after': '<CR>}', 'filetype': 'c'})
