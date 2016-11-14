@@ -35,3 +35,4 @@ call lexima#add_rule({'char': '/*', 'input': '/* ', 'input_after': ' */', 'filet
 call lexima#add_rule({'char': '/m', 'input': '#include <stdio.h><CR><CR>int main(int argc, char *argv[]) {<CR>', 'input_after': '<CR>}', 'filetype': 'c'})
 call lexima#add_rule({'char': '/vm', 'input': '#include <stdio.h><CR><CR>void main() {<CR>', 'input_after': '<CR>}', 'filetype': 'c'})
 call lexima#add_rule({'char': '/p', 'input': 'printf("', 'input_after': '\n");', 'filetype': 'c'})
+call lexima#add_rule({'char': '/for', 'input': 'for (i = 0; i < size; i++) {<CR>', 'input_after': '<CR>    }', 'filetype': 'c'})

@@ -33,3 +33,5 @@ dd                                      -       Delete Current Line
 d[number]d                              -       Delete Multiple Lines
 y                                       -       Yank/Copy
 p                                       -       Paste
+
+gg=G                                    -       Fix All Indentations
