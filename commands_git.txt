@@ -1,0 +1,24 @@
+# Setup by linking .vimrc and initializing submodules
+./install.sh
+./patch_fonts.sh # To be performed once only
+
+# Installing a plugin as a submodule
+git submodule add http://github.com/[user]/[plugin] bundle/[plugin-name]
+git add .
+git commit -m "Installed [plugin] bundle as a submodule."
+
+# Updating bundled submodule plugins
+git submodule foreach git pull origin master
+# or update each plugin manually
+cd bundles/[plugin]
+git pull
+
+# Removing a plugin
+git submodule deinit -f bundle/[plugin-name]
+git rm -rf bundle/[plugin-name]
+git add .
+git commit -m "Removed [plugin] bundle"
+
+# Pathogen with Submodules Guides
+https://gist.github.com/romainl/9970697
+http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
