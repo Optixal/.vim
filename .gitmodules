@@ -14,12 +14,12 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = https://github.com/scrooloose/syntastic
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline
 [submodule "bundle/vim-monokai"]
 	path = bundle/vim-monokai
 	url = https://github.com/crusoexia/vim-monokai
+[submodule "bundle/spacemacs-theme"]
+	path = bundle/spacemacs-theme
+	url = https://github.com/colepeters/spacemacs-theme.vim

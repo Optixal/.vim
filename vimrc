@@ -4,27 +4,41 @@ execute pathogen#infect()
 execute pathogen#helptags()
 
 " Coloring
-color dracula
 syntax on
+color dracula
 highlight Comment cterm=bold
-highlight Normal ctermbg=none
+highlight Normal cterm=none
 highlight NonText ctermbg=none
+
+" Coloring - Opaque Background (Comment out to use terminal's profile)
+let opaque = 1
+if opaque == 1
+    set termguicolors
+    set background=dark
+    if &term =~ '256color'
+      " Disable Background Color Erase (BCE) (Fixes lines with messed up bg)
+      set t_ut=
+    endif
+endif
 
 " Other Configurations
 filetype plugin indent on
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab smartindent
 set nocompatible ruler laststatus=2 showcmd showmode number
 set incsearch ignorecase smartcase hlsearch
-set ttyfast lazyredraw
-set nowrap
+set ttyfast
+set title
+"set lazyredraw (mode bar disappears when opening a file)
+set wrap breakindent
 set encoding=utf-8
+set fillchars+=vert:\ 
 
-" Syntastic
-let g:syntastic_check_on_open = 1
-let g:syntastic_error_symbol = '✗'
-let g:syntastic_style_error_symbol = '✠'
-let g:syntastic_warning_symbol = '∆'
-let g:syntastic_style_warning_symbol = '≈'
+" Syntastic (Removed due to Python 2/3 conflict)
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_error_symbol = '✗'
+"let g:syntastic_style_error_symbol = '✠'
+"let g:syntastic_warning_symbol = '∆'
+"let g:syntastic_style_warning_symbol = '≈'
 
 " Powerline
 let g:airline_powerline_fonts = 1
@@ -37,5 +51,5 @@ call lexima#add_rule({'char': '/vm', 'input': '#include <stdio.h><CR><CR>void ma
 call lexima#add_rule({'char': '/p', 'input': 'printf("', 'input_after': '\n");', 'filetype': 'c'})
 call lexima#add_rule({'char': '/for', 'input': 'for (i = 0; i < size; i++) {<CR>', 'input_after': '<CR>    }', 'filetype': 'c'})
 
-" Lexima - Python
-call lexima#add_rule({'char': '//', 'input': '# ', 'filetype': 'python'})
+" NERDTree
+let NERDTreeShowHidden=1

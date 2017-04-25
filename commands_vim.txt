@@ -35,3 +35,8 @@ y                                       -       Yank/Copy
 p                                       -       Paste
 
 gg=G                                    -       Fix All Indentations
+
+vi"                                     -       Select everything within double quotes
+va"                                     -       Select everything within and including double quotes
+vi"d                                    -       Delete everything within double quotes
+vi"s                                    -       Delete everything within double quotes then go into insert mode
