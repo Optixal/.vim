@@ -26,3 +26,6 @@
 [submodule "bundle/vim-closetag"]
 	path = bundle/vim-closetag
 	url = https://github.com/alvan/vim-closetag
+[submodule "bundle/loremipsum"]
+	path = bundle/loremipsum
+	url = https://github.com/vim-scripts/loremipsum
