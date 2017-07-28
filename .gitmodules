@@ -29,3 +29,6 @@
 [submodule "bundle/loremipsum"]
 	path = bundle/loremipsum
 	url = https://github.com/vim-scripts/loremipsum
+[submodule "bundle/tpope-vim-abolish"]
+	path = bundle/tpope-vim-abolish
+	url = https://github.com/tpope/tpope-vim-abolish
