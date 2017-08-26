@@ -1,1 +1,1 @@
-#.vim
+# Optixal's .vim
