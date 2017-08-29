@@ -26,3 +26,6 @@
 [submodule "bundle/tpope-vim-abolish"]
 	path = bundle/tpope-vim-abolish
 	url = https://github.com/tpope/tpope-vim-abolish
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = https://github.com/godlygeek/tabular
